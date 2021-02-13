@@ -1,0 +1,42 @@
+@import "../fonts/Montserrat/stylesheet.css";
+@import "../fonts/OpenSans/stylesheet.css";
+@import "../fonts/Pacifico/stylesheet.css";
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+p{
+  margin-bottom: 0;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 auto;
+}
+img{
+  vertical-align: unset;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+  margin-bottom: unset;
+}
+
+@import "header";
+@import "home";
+@import "about";
+@import "quote";
+@import "team";
+@import "facts";
+@import "services";
+@import "testimonial";
+@import "works";
+@import "tweet";
+@import "blog";
+@import "clients";
+@import "contact";
+@import "keyframes";
+@import "googlemap";
+@import "footer";
+@import "media";

@@ -1,0 +1,33 @@
+.services {
+  margin: 100px 0;
+}
+.services-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 46px;
+  margin-bottom: 150px;
+}
+.services-heading__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 46px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 30px;
+  color: #000;
+  text-transform: uppercase;
+  border-right: 4px solid #F39C12;
+  padding-right: 18px;
+  margin-right: 17px;
+}
+.services-heading__info {
+  width: 883px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: #4D4D4D;
+  text-transform: uppercase;
+}

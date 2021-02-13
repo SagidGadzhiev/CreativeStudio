@@ -1,0 +1,23 @@
+.googlemap{
+  margin: 100px 0;
+  position: relative;
+  z-index: 0;
+  &::before{
+    content: '';
+    position: absolute;
+    height: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom right, transparent 49.5%, #ffffff 50%) left / 100% 100% no-repeat;
+  }
+  &::after{
+    content: '';
+    position: absolute;
+    height: 100px;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: linear-gradient(to top left, transparent 49.5%, #ffffff 50%) left / 100% 100% no-repeat;
+  }
+}

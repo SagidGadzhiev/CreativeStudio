@@ -1,0 +1,73 @@
+.quote{
+  margin-top: 100px;
+  position: relative;
+  z-index: 0;
+  background: url("../img/quote/bg.png") center/cover no-repeat fixed;
+  text-align: center;
+  &-block{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    &::after{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.8);
+    }
+  }
+  &::before{
+    content: '';
+    position: absolute;
+    height: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom right, transparent 49.5%, #ffffff 50%) left / 100% 100% no-repeat;
+  }
+  &::after{
+    content: '';
+    position: absolute;
+    height: 100px;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: linear-gradient(to top left, transparent 49.5%, #ffffff 50%) left / 100% 100% no-repeat;
+  }
+  &-title{
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+    color: white;
+    padding-top: 255px;
+    animation-duration: 3s;
+    &_fade{
+      padding-top: 0;
+    }
+    &__text{
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+      font-size: 110px;
+      color: white;
+    }
+  }
+  &-line{
+    margin: 32px auto 15px;
+    width: 51px;
+    height: 5px;
+    background: #F39C12;
+  }
+  &-info{
+    font-size: 24px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    color: #fff;
+    padding-bottom: 255px;
+    text-transform: uppercase;
+  }
+}

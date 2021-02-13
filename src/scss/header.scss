@@ -1,0 +1,75 @@
+.header{
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 80px;
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-logoBox{
+    position: relative;
+    transition: 1s;
+    &:hover{
+      transform: scale(1.2);
+    }
+    &__logo{
+      text-decoration: none;
+      font-size: 45px;
+      color: white;
+      font-family: Montserrat,sans-serif;
+      font-weight: bold;
+      font-style: normal;
+      transition: 1s;
+      &:hover{
+        color: #000;
+      }
+    }
+    &::before{
+      content: '';
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      border-top: 2px solid #fff;
+      border-right: 2px solid #000;
+      border-bottom: 2px solid #fff;
+      border-left: 2px solid #000;
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      transition: 1s;
+      z-index: -1;
+    }
+    &:hover::before{
+      transition: 1s;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%) rotate(360deg) ;
+    }
+  }
+  &-nav{
+    &__link{
+      text-transform: uppercase;
+      font-family: "Open Sans",sans-serif;
+      font-weight: bold;
+      font-style: normal;
+      color: white;
+      text-decoration: none;
+      transition: 0.6s;
+      &:hover{
+        color:#000;
+      }
+    }
+    &__text{
+      font-family: "Open Sans",sans-serif;
+      font-weight: bold;
+      font-style: normal;
+      color: white;
+      padding: 0 30px;
+    }
+  }
+}

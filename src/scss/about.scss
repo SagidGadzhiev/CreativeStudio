@@ -1,0 +1,205 @@
+.about{
+  &-flexContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 46px;
+    text-transform: uppercase;
+    margin-bottom: 145px;
+    margin-top: 65px;
+    &__title{
+      color: #0D0D0D;
+      font-size: 30px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+      font-style: normal;
+      border-right: 4px solid #F39C12;
+      padding-right: 18px;
+      margin-right: 17px;
+    }
+    &__info{
+      width: 883px;
+      color: #4D4D4D;
+      font-size: 16px;
+      font-family: "Open Sans", sans-serif;
+    }
+  }
+  &-content{
+    display: flex;
+    margin-bottom: 120px;
+    &__bulb{
+      animation: rotateIn;
+      animation-duration: 3s;
+      width: 126px;
+      height: 126px;
+      border-left: 2px solid yellow;
+      border-right: 2px solid yellow;
+      border-top: 2px solid red;
+      border-bottom: 2px solid red;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 30px;
+      .far{
+        font-size: 45px;
+        color: #000;
+        text-align: center;
+        animation-duration: 5s;
+      }
+    }
+    &__story{
+      max-width: 485px;
+      max-height: 258px;
+      margin-right: 64px;
+      &-title{
+        font-size: 20px;
+        color: #000;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 29px;
+      }
+      &-paragraph{
+        font-size: 20px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 300;
+        color: #E74C3C;
+        margin-bottom: 32px;
+      }
+      &-info{
+        font-family: "Open Sans", sans-serif;
+        font-weight: 300;
+        color: #737373;
+        font-size: 16px;
+      }
+    }
+    &__img{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 451px;
+      height: 255px;
+      background: #E74C3C;
+      .fas{
+        color: #fff;
+        font-size: 45px;
+      }
+      .fa-star{
+        position: absolute;
+        color: #fff;
+        font-size: 12px;
+        animation: flash;
+        animation-duration: 5s;
+        top: 100px;
+        right: 180px;
+      }
+    }
+  }
+  &-hr{
+    height: 3px !important;
+    color: #737373;
+    margin-bottom: 125px;
+  }
+  &-skills{
+    display: flex;
+    &__showcase{
+      position: relative;
+      width: 497px;
+      height: 484px;
+      margin-right: 94px;
+      &-iPhone{
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        left: 0;
+      }
+      &-iPad{
+        position: absolute;
+        z-index: 0;
+        right: 0;
+        top: 0;
+      }
+    }
+    &__bars{
+      &-about{
+        display: flex;
+        margin-bottom: 68px;
+        &__params{
+          width: 126px;
+          height: 126px;
+          border: 2px solid #F39C12;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 29px;
+        }
+        &__skills{
+          max-width: 387px;
+          &-title{
+            text-transform: uppercase;
+            font-family: "Open Sans", sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 18px;
+          }
+          &-info{
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300;
+            font-size: 16px;
+            color: #737373;
+            line-height: 26px;
+          }
+        }
+      }
+      &-statistic{
+        &__title{
+          color: #000;
+          font-family: "Open Sans", sans-serif;
+          font-weight: bold;
+          font-size: 16px;
+          text-transform: uppercase;
+          margin-bottom: 5px;
+          &-text{
+            font-family: "Open Sans", sans-serif;
+            font-weight: normal;
+            font-size: 16px;
+            color: #737373;
+          }
+        }
+        &__line{
+          width: 100%;
+          height: 11px;
+          background: #E6E6E6;
+          position: relative;
+          z-index: 0;
+          margin-bottom: 37px;
+          overflow: hidden;
+          &:last-child{
+            margin-bottom: 0;
+          }
+          &-progress{
+            position: absolute;
+            height: 100%;
+            background: #F39C12;
+            z-index: 1;
+            &_first{
+              width: 88%;
+            }
+            &_second{
+              width: 76%;
+            }
+            &_third{
+              width: 81%;
+            }
+            &_fourth{
+              width: 71%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
